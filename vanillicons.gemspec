@@ -26,7 +26,8 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/vanillicons.rb",
     "test/helper.rb",
-    "test/test_vanillicons.rb"
+    "test/test_vanillicons.rb",
+    "vanillicons.gemspec"
   ]
   s.homepage = "http://github.com/garymardell/vanillicons"
   s.licenses = ["MIT"]
