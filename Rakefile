@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "vanillicons"
   gem.homepage = "http://github.com/garymardell/vanillicons"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Generates the address for a vanillicon image}
+  gem.description = %Q{Vanillicons are a small generated avatar made by vanillaforums.org, they use a md5 hash as the image key. Images can be generated on the site at vanillicon.com. The images come in 3 different sizes; 50px, 100px and 200px.}
   gem.email = "info@garymardell.co.uk"
   gem.authors = ["Gary Mardell"]
   # dependencies defined in Gemfile
@@ -30,14 +30,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
